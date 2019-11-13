@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "");
+
+	float luku;
+	float summa;
+	summa = 0;
+	char talletus;
+	talletus = '1';
+	char nosto;
+	nosto = '2';
+	char lopetus;
+	lopetus = '3';
+	char toiminto;
+
+
+	cout << "Tervetuloa pankkiin!";
+	cout << "\nTilill� on rahaa " << summa << " Euroa";
+	cout << "\nValitse toiminto (1. Talleta, 2. Nosta, 3. Lopeta): ";
+	cin >> toiminto;
+
+	while (toiminto != 3) {
+		if (toiminto == talletus) {
+			cout << "\nSy�t� talletettava rahasumma: ";
+			cin >> luku;
+			summa = summa + luku;
+			
+		} if (toiminto == nosto) {
+			cout << "\nSy�t� nostettava rahasumma: ";
+			cin >> luku;
+			summa = summa - luku;
+		} if (toiminto == lopetus)
+			break;
+			
+		cout << "\nTilin saldo on: " << summa;
+		cout << "\nValitse toiminto (1. Talleta, 2. Nosta, 3. Lopeta): ";
+		cin >> toiminto;
+		
+		
+		
+
+		
+		
+	}cout << "\nN�kemiin!";
+
+
+	cout << endl << endl;
+	system("pause");
+	return 0;
+}
