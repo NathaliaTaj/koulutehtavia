@@ -1,0 +1,74 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "");
+
+	
+	char a = '1';
+	char b = '2';
+	char c = '3';
+	char d = '4';
+	char lopetus = 'L';
+	char valinta;
+	double luku;
+	double tulos;
+	tulos = 0;
+
+	
+
+	
+
+	while (true) {
+		
+		cout << "\nValitse laskutoimitus (1=neli�juuri, 2=log, 3=exp ja 4=tan, L=lopetus: ";
+		cin >> valinta;
+	
+		
+	
+		if (valinta == a) {
+			
+			cout << "\nSy�t� luku: ";
+			cin >> luku;
+
+			tulos = sqrt(luku);
+			cout << "\nSy�tt�m�si luvun neli�juuri on " << tulos;
+			
+		}
+		else if (valinta == b) {
+	
+			cout << "\nSy�t� luku: ";
+			cin >> luku;
+
+			tulos = log(luku);
+			cout << "\nSy�tt�m�si luvun luonnollinen logaritmi on " << tulos;
+			
+		}
+		else if (valinta == c) {
+
+			cout << "\nSy�t� luku: ";
+			cin >> luku;
+
+			tulos = exp(luku);
+			cout << "\nSy�tt�m�si luvun eksponenttifunktio on " << tulos;
+			
+		}
+		else if (valinta == d) {
+
+			cout << "\nSy�t� luku: ";
+			cin >> luku;
+
+			tulos = tan(luku);
+			
+			cout << "\nSy�tt�m�si luvun tangentti on " << tulos;
+			
+		}
+		else {
+			break;
+		}
+	}
+	cout << endl << endl;
+	system("pause");
+	return 0;
+}
