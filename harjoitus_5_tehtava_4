@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "");
+
+	int tuomari;
+	tuomari = 1;
+	float pituus;
+	float tyylipiste;
+	float tyylipisteet;
+	tyylipisteet = 0;
+	float summa;
+
+	cout << "Sy�t� hypyn pituus: ";
+	cin >> pituus;
+
+	while (tuomari <= 5) {
+
+		if (tuomari == 1) {
+			cout << "\nSy�t� ensimm�isen tuomarin antamat tyylipisteet: ";
+			cin >> tyylipiste;
+			tyylipisteet = tyylipisteet + tyylipiste;
+			tuomari++;
+			
+			
+		} if (tuomari == 2) {
+			cout << "\nSy�t� toisen tuomarin antamat tyylipisteet: ";
+			cin >> tyylipiste;
+			tyylipisteet = tyylipisteet + tyylipiste;
+			tuomari++;
+		} if (tuomari == 3) {
+			cout << "\nSy�t� kolmanen tuoamrin antamat tyylipisteet: ";
+			cin >> tyylipiste;
+			tyylipisteet = tyylipisteet + tyylipiste;
+			tuomari++;
+		} if (tuomari == 4) {
+			cout << "\nSy�t� nelj�nnen tuomarin antamat tyylipisteet: ";
+			cin >> tyylipiste;
+			tyylipisteet = tyylipisteet + tyylipiste;
+			tuomari++;
+		} if (tuomari == 5) {
+			cout << "\nSy�t� viidennen tuomarin antamat tyylipisteet: ";
+			cin >> tyylipiste;
+			tyylipisteet = tyylipisteet + tyylipiste;
+			break;
+		}
+		
+		
+	} summa = tyylipisteet + (0.9 * pituus);
+	cout << "\nHypyn pisteet: " << summa;
+
+	cout << endl << endl;
+	system("pause");
+	return 0;
+}
