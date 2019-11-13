@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "");
+
+	string etunimi;
+	string sukunimi;
+	string osoite;
+	string katunumero;
+	string postinumero;
+	string kunta;
+	int lkm;
+	int i;
+	i = 0;
+
+	cout << "Sy�t� etunimi: ";
+	cin >> etunimi;
+	cout << "Sy�t� sukunimi: ";
+	cin >> sukunimi;
+	cout << "Sy�t� kadunnimi: ";
+	cin >> osoite;
+	cout << "Sy�t� postinumero: ";
+	cin >> postinumero;
+	cout << "Sy�t� kunta: ";
+	cin >> kunta;
+
+	
+
+	cout << "Osoitteesi on: " << etunimi << " " << sukunimi << " " << osoite << " " << postinumero << " " << kunta;
+	
+	if (etunimi < sukunimi) {
+		cout << "\nEtunimi on esinmm�isen� aakkosissa.";
+
+	}
+	else {
+		cout << "\nSukunimi on ensimm�isen� aakkosissa";
+	}
+	
+	lkm = etunimi.size() + sukunimi.size();
+	cout << "\nNimess�si on " << lkm << " kirjainta";
+	
+	cout << endl << endl;
+	system("pause");
+	return 0;
+}
