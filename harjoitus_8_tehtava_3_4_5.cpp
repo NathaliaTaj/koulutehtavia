@@ -10,16 +10,16 @@ int main() {
 
 	float luku1, luku2, tulos, teho;
 
-	cout << "Syötä jännite: ";
+	cout << "SyÃ¶tÃ¤ jÃ¤nnite: ";
 	cin >> luku1;
-	cout << "\nSyötä resistanssi: ";
+	cout << "\nSyÃ¶tÃ¤ resistanssi: ";
 	cin >> luku2;
 
 	tulos = virta(luku1, luku2);
 
-	cout << "\nPiirissä kulkeva virta on " << tulos;
+	cout << "\nPiirissÃ¤ kulkeva virta on " << tulos;
 
-	cout << "\n\nSyötä laitteen kuluttama teho: ";
+	cout << "\n\nSyÃ¶tÃ¤ laitteen kuluttama teho: ";
 	cin >> teho;
 	sulake(teho);
 
